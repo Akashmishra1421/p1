@@ -10,13 +10,11 @@ pool:
   vmImage: default
 
 steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+- script: echo my first script
+  displayName: 'simple script run'
+- script: mvn clean install
+  displayName: 'script to build'
+- script: mvn test
+  displayName: 'script test'
+- script: java -jar target/p1-1.0-SNAPSHOT.jar
+  displayName: 'script run'
