@@ -37,9 +37,9 @@
   		<version>3.0.1</version>
   		<configuration>
 			<archive>
-				<manifestEntries>
+				<manifest>
 					<mainClass>com.example.app</mainClass>
-				</manifestEntries>
+				</manifest>
 			</archive>
 		</configuration>
 	</plugin>
