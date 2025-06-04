@@ -32,7 +32,7 @@ pipeline {
 		{
 			steps
 			{
-				sh 'java-jar target/p1-1.0-SNAPSHOT.jar
+				sh 'java-jar target/p1-1.0-SNAPSHOT.jar'
 			}
 		}
 	}
